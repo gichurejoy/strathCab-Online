@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfileCustomer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/profileImageCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:foreground="@drawable/circular_boardershape"
+            android:gravity="center_vertical"
+            android:src="@drawable/defavatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+   <TextView
+       android:id="@+id/Name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="32dp"
+       android:layout_marginLeft="32dp"
+       android:layout_marginTop="260dp"
+       android:layout_marginEnd="32dp"
+       android:layout_marginRight="32dp"
+       android:background="@drawable/profiletextviewbackground"
+       android:padding="12dp"
+       android:text="Name"
+       android:textColor="@color/black"
+       android:textSize="18sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/email_Customer"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="32dp"
+       android:layout_marginLeft="32dp"
+       android:layout_marginTop="24dp"
+       android:textSize="18sp"
+       android:layout_marginEnd="32dp"
+       android:layout_marginRight="32dp"
+       android:text="Email"
+       android:textColor="@color/black"
+       app:layout_constraintEnd_toEndOf="@+id/Name"
+       app:layout_constraintStart_toStartOf="@+id/Name"
+       app:layout_constraintTop_toBottomOf="@+id/Name"
+       android:background="@drawable/profiletextviewbackground"
+       android:padding="12dp"/>
+
+
+   <TextView
+       android:id="@+id/adminNumber"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="32dp"
+       android:layout_marginLeft="32dp"
+       android:layout_marginTop="16dp"
+       android:layout_marginEnd="32dp"
+       android:layout_marginRight="32dp"
+       android:background="@drawable/profiletextviewbackground"
+       android:padding="12dp"
+       android:text="Admission number"
+       android:textSize="18sp"
+       android:textColor="@color/black"
+       app:layout_constraintEnd_toEndOf="@+id/email_Customer"
+       app:layout_constraintHorizontal_bias="0.25"
+       app:layout_constraintStart_toStartOf="@+id/email_Customer"
+       app:layout_constraintTop_toBottomOf="@+id/email_Customer" />
+
+   <TextView
+       android:id="@+id/phoneNumber"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="32dp"
+       android:layout_marginLeft="32dp"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="32dp"
+       android:layout_marginRight="32dp"
+       android:textSize="18sp"
+       android:textColor="@color/black"
+       android:background="@drawable/profiletextviewbackground"
+       android:padding="12dp"
+       android:text=" Phone number"
+       app:layout_constraintEnd_toEndOf="@+id/adminNumber"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="@+id/adminNumber"
+       app:layout_constraintTop_toBottomOf="@+id/adminNumber" />
+
+
+   <LinearLayout
+       android:id="@+id/linearLayout2"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+       app:layout_constraintVertical_bias="0.213"
+       tools:layout_editor_absoluteX="0dp">
+
+       <Button
+           android:id="@+id/changePassoword"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginStart="10dp"
+           android:layout_marginLeft="10dp"
+           android:background="@color/colorPrimary"
+           android:text="Change password"
+           app:backgroundTint="#00CED1" />
+
+       <Button
+           android:id="@+id/updateProfile"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginStart="10dp"
+           android:layout_marginLeft="10dp"
+           android:background="@color/colorPrimary"
+           android:text="Update profile"
+           app:backgroundTint="#00CED1" />
+
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/deleteCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Delete account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
