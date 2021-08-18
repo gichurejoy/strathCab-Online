@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".AddProfileImageCustomer">
+
+
+    <ImageView
+        android:id="@+id/addprofile"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:foreground="@drawable/circular_boardershape"
+        android:gravity="center_vertical"
+        android:src="@drawable/defavatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/change_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Change Profile"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addprofile" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_profile"
+        app:layout_constraintVertical_bias="0.213"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/buttonstyle"
+            android:text="SAVE"
+             />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonstyle"
+            android:text="CLOSE"
+             />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

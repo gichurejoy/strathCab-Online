@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfileDriver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/profileImageDriver"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:foreground="@drawable/circular_boardershape"
+            android:gravity="center_vertical"
+            android:src="@drawable/defavatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/NameDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/profiletextviewbackground"
+        android:padding="12dp"
+        android:text="Name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email_Driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="@+id/NameDriver"
+        app:layout_constraintStart_toStartOf="@+id/NameDriver"
+        app:layout_constraintTop_toBottomOf="@+id/NameDriver"
+        android:background="@drawable/profiletextviewbackground"
+        android:padding="12dp"/>
+
+
+    <TextView
+        android:id="@+id/adminNumberDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/profiletextviewbackground"
+        android:padding="12dp"
+        android:text="Admission number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/email_Driver"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/email_Driver"
+        app:layout_constraintTop_toBottomOf="@+id/email_Driver" />
+
+    <TextView
+        android:id="@+id/phoneNumberDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:textSize="18sp"
+        android:background="@drawable/profiletextviewbackground"
+        android:padding="12dp"
+        android:text=" Phone number"
+        app:layout_constraintEnd_toEndOf="@+id/adminNumberDriver"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/adminNumberDriver"
+        app:layout_constraintTop_toBottomOf="@+id/adminNumberDriver" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDriver"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberDriver"
+        app:layout_constraintVertical_bias="0.213"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/changePassoword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Change password"
+            app:backgroundTint="#00CED1" />
+
+        <Button
+            android:id="@+id/updateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Update profile"
+            app:backgroundTint="#00CED1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/deleteDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Delete account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDriver"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
