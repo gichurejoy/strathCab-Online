@@ -115,6 +115,7 @@
                                         this.closest('form').submit();">
     Log Out
 </a>
+
                 </form>
             </div>
         </div>
