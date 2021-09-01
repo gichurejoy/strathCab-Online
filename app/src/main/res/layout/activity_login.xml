@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.strathdriver.LoginActivity"
     android:id="@+id/root"
-    android:background="@drawable/bg_login_uber_clone_driver">
+    android:background="@drawable/background">
 
     <LinearLayout
         android:layout_width="wrap_content"
