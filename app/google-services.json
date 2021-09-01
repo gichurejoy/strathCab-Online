@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "404814792956",
+    "firebase_url": "https://strath-cab-c7f49-default-rtdb.firebaseio.com",
+    "project_id": "strath-cab-c7f49",
+    "storage_bucket": "strath-cab-c7f49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404814792956:android:2b5648fe6488eaa7cb2f79",
+        "android_client_info": {
+          "package_name": "com.example.strathcab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404814792956-q9rdr1vldg9v3e1va83nccpov1hddmtj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbXD9l6sJo-qa3U2_kjl-tAIdsqAQohN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404814792956-q9rdr1vldg9v3e1va83nccpov1hddmtj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404814792956:android:4b93ec820950fac4cb2f79",
+        "android_client_info": {
+          "package_name": "com.example.strathdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404814792956-q9rdr1vldg9v3e1va83nccpov1hddmtj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbXD9l6sJo-qa3U2_kjl-tAIdsqAQohN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404814792956-q9rdr1vldg9v3e1va83nccpov1hddmtj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
